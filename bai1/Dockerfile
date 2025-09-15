@@ -18,7 +18,7 @@ RUN mkdir -p /home/user/.vnc && \
     chmod 600 /home/user/.vnc/passwd
 
 # Copy xstartup script
-COPY scripts/xstartup /home/user/.vnc/xstartup
+COPY vnc/xstartup /home/user/.vnc/xstartup
 RUN chown user:user /home/user/.vnc/xstartup && chmod +x /home/user/.vnc/xstartup
 
 # Tạo SSH host keys
